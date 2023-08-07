@@ -1,0 +1,238 @@
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 32px;
+    padding: 0 24px;
+}
+.category img {
+    width: 32px;
+    height: 32px;
+    margin-right: 40px;
+}
+
+.logoImg img {
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    width: fit-content;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.login_register_box {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    width: 180px;
+}
+.login_register_box .login {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.login_register_box .vertical_devider {
+    width: 2px;
+    height: 20px;
+    margin-right: 8px;
+    background-color: gray;
+}
+
+.login_register_box .register {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 32px;
+    min-width: 80px;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.mainDiv {
+    display: flex;
+    margin-top: 40px;
+    gap: 40px;
+    justify-content: space-evenly;
+}
+.productDetailDiv {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: auto;
+    /* background-color: aqua; */
+    gap: 100px;
+    align-items: center;
+}
+.productImg {
+    display: flex;
+}
+
+.buyDivWrapper {
+    max-width: 500px;
+    height: auto;
+}
+.buyDiv {
+    position: sticky;
+    padding: 20px;
+    top: 80px;
+    background-color: #ccc;
+}
+.buyDiv hr {
+    width: 100%;
+}
+.buyLayout {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.productName {
+    display: flex;
+    font-size: 40px;
+    margin-top: 30px;
+}
+.priceDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.countDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.count #productCount {
+    width: 100px;
+    height: 30px;
+}
+.deliWayDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.deliWay select {
+    width: 100px;
+    height: 30px;
+}
+.totalPriceDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.btnDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+button.buyBtn {
+    align-self: center;
+    width: 100px;
+    height: 40px;
+    background-color: rgb(123, 49, 245);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button.saveBtn {
+    align-self: center;
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* -------------------------- 메뉴바 CSS ------------------------ */
+
+body {
+    min-height: 100vh;
+    padding: 3rem;
+}
+
+details {
+    max-width: 12rem;
+    position: relative;
+}
+
+summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+summary::after {
+    content: '☰';
+    position: relative;
+    font-size: 2rem;
+    margin-right: 20px;
+}
+
+details[open] summary::after {
+    content: '×';
+}
+
+details[open] summary::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+ul {
+    position: absolute;
+    width: calc(100vw - 190px);
+    left: -32px;
+    top: 2.5rem;
+    list-style: none;
+    padding: 0;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 2px hsla(220, 10%, 20%, 0.5), 0 2px 6px hsla(220, 10%, 20%, 0.2);
+    background-color: #fff;
+}
+
+ul::before {
+    content: '';
+    position: absolute;
+    top: -1.45rem;
+    left: 2rem;
+    width: 0;
+    height: 0;
+    border: 0.75rem solid transparent;
+    border-bottom-color: #fff;
+    filter: drop-shadow(0 -2px 1px hsla(220, 10%, 20%, 0.1));
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    color: hsl(220, 10%, 20%);
+    background-color: hsl(220, 10%, 98%);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
